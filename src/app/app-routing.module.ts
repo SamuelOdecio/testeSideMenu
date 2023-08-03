@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'button',
     loadChildren: () => import('./paginas/button/button.module').then( m => m.ButtonPageModule)
+  },
+  {
+    path: 'lista',
+    loadChildren: () => import('./paginas/lista/lista.module').then( m => m.ListaPageModule)
   }
 ];
 
